@@ -1,4 +1,6 @@
-﻿namespace ASP.NET.Models
+﻿using ASP.NET.Models;
+
+namespace ASP.NET.ModelsDTO.Post
 {
     public class CreatePostDto
     {

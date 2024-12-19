@@ -1,4 +1,4 @@
-﻿namespace ASP.NET.Models
+﻿namespace ASP.NET.ModelsDTO.User
 {
     public class UserEditModel
     {

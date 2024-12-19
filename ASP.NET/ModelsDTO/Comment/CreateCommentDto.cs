@@ -1,4 +1,4 @@
-﻿namespace ASP.NET.Models
+﻿namespace ASP.NET.ModelsDTO.Comment
 {
     public class CreateCommentDto
     {

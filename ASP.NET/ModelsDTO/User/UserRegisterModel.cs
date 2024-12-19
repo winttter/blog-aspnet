@@ -1,20 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ASP.NET.Models
+namespace ASP.NET.ModelsDTO.User
 {
     public class UserRegisterModel
     {
-        [Required]
+        //[Required]
         public string FullName { get; set; }
-        [Required]
+        //[Required]
         public DateTime? BirthDate { get; set; }
-        [Required]
+        //[Required]
         public string Gender { get; set; }
-        [Required]
+        //[Required]
         public string? PhoneNumber { get; set; }
-        [Required]
+        //[Required]
         public string Email { get; set; }
-        [Required]
+        //[Required]
         public string Password { get; set; }
     }
 }

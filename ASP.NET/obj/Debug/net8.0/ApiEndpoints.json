@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "ASP.NET.Controllers.PostController",
+    "Method": "Post",
+    "RelativePath": "api/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ASP.NET.ModelsDTO.Post.CreatePostDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.PostController",
     "Method": "Get",
     "RelativePath": "api/Post",
     "HttpMethod": "GET",
@@ -10,16 +26,52 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ASP.NET.Controllers.TestController",
-    "Method": "Register",
-    "RelativePath": "api/Test/register",
+    "ContainingType": "ASP.NET.Controllers.UserController",
+    "Method": "GetProfile",
+    "RelativePath": "api/User/getProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "ASP.NET.Models.UserRegisterModel",
+        "Type": "ASP.NET.Models.LoginCredentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ASP.NET.ModelsDTO.User.UserRegisterModel",
         "IsRequired": true
       }
     ],

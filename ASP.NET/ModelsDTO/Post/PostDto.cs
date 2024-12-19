@@ -1,6 +1,8 @@
-﻿namespace ASP.NET.Models
+﻿using ASP.NET.Models;
+
+namespace ASP.NET.ModelsDTO.Post
 {
-    public class PostFullDto
+    public class PostDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -17,6 +19,5 @@
         public bool? HasLike { get; set; }
         public int CommentsCount { get; set; }
         public List<TagDto> Tags { get; set; }
-        public List<CommentDto> Comments { get; set; }
     }
 }
