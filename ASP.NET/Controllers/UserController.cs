@@ -40,7 +40,7 @@ namespace ASP.NET.Controllers
         }
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPut("getProfile")]
+        [HttpGet("getProfile")]
         public async Task<IActionResult> GetProfile()
         {
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
@@ -48,6 +48,14 @@ namespace ASP.NET.Controllers
 
         }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPut("editProfile")]
+        public async Task<IActionResult> EditProfile()
+        {
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            return Ok(await _userService.GetProfile(name));
+
+        }
         /*[HttpGet]
         public ActionResult<User> Get()
         {

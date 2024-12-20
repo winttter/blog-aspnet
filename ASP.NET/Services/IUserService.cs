@@ -14,6 +14,7 @@ namespace ASP.NET.Services
         Task<TokenResponse> Login(LoginCredentials loginCredentials);
         Task<Response> Logout(string authorizationString);
         Task<UserDto> GetProfile(string authorizationString);
+        Task<UserEditModel> EditProfile(string authorizationString);
     }
 
     public class UserService : IUserService
@@ -36,8 +37,8 @@ namespace ASP.NET.Services
             User user = new()
             {
                 UserName = model.FullName,
+                FullName = model.FullName,
                 Email = model.Email,
-                Password = model.Password,
                 PhoneNumber = model.PhoneNumber,
                 BirthDate = model.BirthDate,
                 Gender = model.Gender,
@@ -101,6 +102,17 @@ namespace ASP.NET.Services
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == name)!;
             UserDto user = new UserDto();
             user.Id = userFound.Id;
+            user.PhoneNumber = userFound.PhoneNumber;
+            user.Email = userFound.Email;
+            user.BirthDate = userFound.BirthDate;
+            user.FullName = userFound.UserName!;
+            user.Gender = userFound.Gender;
+            return user;
+        }
+        public async Task<UserEditModel> EditProfile(string name)
+        {
+            var userFound = _context.Users.FirstOrDefault(a => a.UserName == name)!;
+            UserEditModel user = new UserEditModel();
             user.PhoneNumber = userFound.PhoneNumber;
             user.Email = userFound.Email;
             user.BirthDate = userFound.BirthDate;

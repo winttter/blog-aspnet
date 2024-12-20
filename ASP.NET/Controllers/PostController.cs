@@ -8,6 +8,7 @@ using ASP.NET.ModelsDTO.Post;
 using System.Security.Claims;
 using ASP.NET.Enums;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ASP.NET.Controllers
 {
@@ -33,7 +34,18 @@ namespace ASP.NET.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> Get(List<Tag> tags, string author, int min, int max, PostSorting sorting, bool onlyMyCommunities, int page, int size)
+        public async Task<IActionResult> Get(
+            [FromQuery]
+            List<Tag>? tags,
+            string? author,
+            [Range(0, 100, ErrorMessage = "Minimum reading time cannot be what you sent me.")]
+            int? min,
+            [Range(0, 100, ErrorMessage = "Max reading time cannot be what you sent me.")]
+            int? max,
+            PostSorting sorting = PostSorting.CreateDesc,
+            bool onlyMyCommunities = false, 
+            int page = 1, 
+            int size = 5)
         {
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
             return Ok(await _postService.GetPosts(name, tags, author, min, max, sorting, onlyMyCommunities, page, size));

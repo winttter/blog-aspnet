@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ASP.NET.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace ASP.NET.ModelsDTO.User
 {
@@ -9,7 +10,7 @@ namespace ASP.NET.ModelsDTO.User
         //[Required]
         public DateTime? BirthDate { get; set; }
         //[Required]
-        public string Gender { get; set; }
+        public Gender Gender { get; set; }
         //[Required]
         public string? PhoneNumber { get; set; }
         //[Required]

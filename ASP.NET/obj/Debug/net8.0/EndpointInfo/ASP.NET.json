@@ -44,6 +44,78 @@
         "tags": [
           "Post"
         ],
+        "parameters": [
+          {
+            "name": "tags",
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Tag"
+              }
+            }
+          },
+          {
+            "name": "author",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "min",
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "max",
+            "in": "query",
+            "schema": {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "sorting",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/PostSorting"
+            }
+          },
+          {
+            "name": "onlyMyCommunities",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 5
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -146,6 +218,23 @@
       }
     },
     "/api/User/getProfile": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/User/editProfile": {
       "put": {
         "tags": [
           "User"
@@ -242,6 +331,14 @@
         },
         "additionalProperties": false
       },
+      "Gender": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "LoginCredentials": {
         "required": [
           "email",
@@ -260,6 +357,16 @@
           }
         },
         "additionalProperties": false
+      },
+      "PostSorting": {
+        "enum": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "Tag": {
         "type": "object",
@@ -292,8 +399,7 @@
             "nullable": true
           },
           "gender": {
-            "type": "string",
-            "nullable": true
+            "$ref": "#/components/schemas/Gender"
           },
           "phoneNumber": {
             "type": "string",
