@@ -1,5 +1,6 @@
 ﻿using ASP.NET.Enums;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Identity.Client;
 
 namespace ASP.NET.Models
 {
@@ -9,6 +10,7 @@ namespace ASP.NET.Models
         public DateTime? BirthDate { get; set; }
         public Gender Gender { get; set; }
         public string FullName { get; set; }
+        public List<Like> Likes { get; set; }
         public List<Community>? CommunityAdmin { get; set; }
         public List<Community>? CommunitySubscriber { get; set; }
         /*public User(UserRegisterModel newUser)

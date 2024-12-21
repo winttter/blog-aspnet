@@ -10,11 +10,21 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Numerics;
 using System.Text;
+using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(x =>
+{
+    x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+})
+    .AddNewtonsoftJson(x =>
+    {
+        x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+        x.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+    }); ;
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -126,6 +136,20 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.Use(
+    async (context, next) =>
+    {
+        try
+        {
+            await next();
+        }
+        catch (Exception e)
+        {
+            await IHelper.HandleExceptionAsync(context, e);
+        }
+    }
+);
 
 app.MapControllers();
 

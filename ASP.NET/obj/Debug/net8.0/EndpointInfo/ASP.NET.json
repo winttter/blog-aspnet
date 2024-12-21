@@ -5,13 +5,18 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Post": {
+    "/api/post": {
       "post": {
         "tags": [
           "Post"
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePostDto"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/CreatePostDto"
@@ -128,6 +133,88 @@
         ]
       }
     },
+    "/api/post/{id}": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
+    "/api/post/{postId}": {
+      "post": {
+        "tags": [
+          "Post"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Post"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "security": [
+          {
+            "Bearer": [ ]
+          }
+        ]
+      }
+    },
     "/api/User/register": {
       "post": {
         "tags": [
@@ -135,6 +222,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRegisterModel"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/UserRegisterModel"
@@ -171,6 +263,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginCredentials"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/LoginCredentials"
@@ -333,11 +430,10 @@
       },
       "Gender": {
         "enum": [
-          0,
-          1
+          "Male",
+          "Female"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "LoginCredentials": {
         "required": [
@@ -360,13 +456,12 @@
       },
       "PostSorting": {
         "enum": [
-          0,
-          1,
-          2,
-          3
+          "CreateDesc",
+          "CreateAsc",
+          "LikeAsc",
+          "LikeDesc"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "Tag": {
         "type": "object",

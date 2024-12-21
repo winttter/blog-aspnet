@@ -3,143 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\user\\usereditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\user\\usereditmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\user\\userregistermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\user\\userregistermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\post\\postfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\post\\postfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\comment\\commentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\mappers\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\mappers\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\logincredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\logincredentials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\pageinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\pageinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\searchaddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\searchaddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\enums\\garaddresslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\enums\\garaddresslevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\comment\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\comment\\createcommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\comment\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\comment\\updatecommentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\community\\communitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\community\\communitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\community\\communityfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\community\\communityfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\community\\communityuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\community\\communityuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\post\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\post\\createpostdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\post\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\post\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\post\\postpagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\post\\postpagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\security\\securityfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\security\\securityfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Posts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -149,44 +22,52 @@
       "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\enums\\postsorting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\enums\\postsorting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\ihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\ihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\community.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\services\\iweatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\services\\iweatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\enums\\communityrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\enums\\communityrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\asp.net.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\asp.net.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\mappers\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\mappers\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\models\\tokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\asp.net\\asp.net\\modelsdto\\post\\postfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DBDDA59-ECDF-479A-942C-50C2D900360B}|ASP.NET\\ASP.NET.csproj|solutionrelative:asp.net\\modelsdto\\post\\postfulldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -196,17 +77,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Services\\IUserService.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IUserService.cs",
               "RelativeToolTip": "ASP.NET\\Services\\IUserService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAewGwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAewGcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T13:17:26.735Z",
               "IsPinned": true,
@@ -214,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "IPostService.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IPostService.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Services\\IPostService.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IPostService.cs",
               "RelativeToolTip": "ASP.NET\\Services\\IPostService.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAIwJIAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T12:10:59.666Z",
               "IsPinned": true,
@@ -228,13 +109,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Controllers\\PostController.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\PostController.cs",
               "RelativeToolTip": "ASP.NET\\Controllers\\PostController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAjwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwEcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T11:14:35.294Z",
               "IsPinned": true,
@@ -242,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\UserController.cs",
               "RelativeToolTip": "ASP.NET\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwDcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T06:57:14.148Z",
               "IsPinned": true,
@@ -256,13 +137,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 11,
               "Title": "TestContext.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TestContext.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Models\\TestContext.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TestContext.cs",
               "RelativeToolTip": "ASP.NET\\Models\\TestContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwCsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T12:51:03.983Z",
               "IsPinned": true,
@@ -270,13 +151,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Program.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Program.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Program.cs",
               "RelativeToolTip": "ASP.NET\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAACEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAD4v5QAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:32:14.775Z",
               "IsPinned": true,
@@ -288,202 +169,134 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\User.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\User.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Mappers\\Tag.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Mappers\\Tag.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Mappers\\Tag.cs",
+              "RelativeToolTip": "ASP.NET\\Mappers\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:47:06.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\User\\UserDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\User\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:55:11.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserEditModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserEditModel.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\User\\UserEditModel.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserEditModel.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\User\\UserEditModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:39:07.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserRegisterModel.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\User\\UserRegisterModel.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\User\\UserRegisterModel.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\User\\UserRegisterModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:34:35.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PostFullDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAADwvxIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:59:08.598Z",
+              "WhenOpened": "2024-12-21T11:12:20.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "Community.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Community.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Models\\Community.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Community.cs",
+              "RelativeToolTip": "ASP.NET\\Models\\Community.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:10:04.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Post.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Models\\Post.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Post.cs",
               "RelativeToolTip": "ASP.NET\\Models\\Post.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvw8AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T13:07:56.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\CommentDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Comment\\CommentDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\CommentDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Comment\\CommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:29:14.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Comment.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\Comment.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Comment.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T06:21:52.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Mappers\\Comment.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Mappers\\Comment.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Mappers\\Comment.cs",
-              "RelativeToolTip": "ASP.NET\\Mappers\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:18:44.271Z",
+              "DocumentIndex": 3,
+              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-21T12:49:12.464Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AuthorDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\AuthorDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\AuthorDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\AuthorDto.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\AuthorDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Title": "TagDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TagDto.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Models\\TagDto.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TagDto.cs",
+              "RelativeToolTip": "ASP.NET\\Models\\TagDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:57:38.806Z",
+              "WhenOpened": "2024-12-21T11:15:39.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Community.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Community.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\Community.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Community.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\Community.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Like.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Like.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Models\\Like.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Like.cs",
+              "RelativeToolTip": "ASP.NET\\Models\\Like.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T06:00:30.12Z",
+              "WhenOpened": "2024-12-21T13:23:52.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\User.cs",
+              "RelativeToolTip": "ASP.NET\\Models\\User.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:47:06.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IHelper.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IHelper.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Services\\IHelper.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IHelper.cs",
+              "RelativeToolTip": "ASP.NET\\Services\\IHelper.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwC8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T11:54:38.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "LoginCredentials.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\LoginCredentials.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\LoginCredentials.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\LoginCredentials.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\LoginCredentials.cs",
+              "Title": "TokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TokenResponse.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\Models\\TokenResponse.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TokenResponse.cs",
+              "RelativeToolTip": "ASP.NET\\Models\\TokenResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:04:40.219Z",
+              "WhenOpened": "2024-12-21T11:56:00.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "PageInfoModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\PageInfoModel.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\PageInfoModel.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\PageInfoModel.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\PageInfoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PostFullDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
+              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
+              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Post\\PostFullDto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:09:14.787Z",
+              "WhenOpened": "2024-12-21T11:06:09.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SearchAddressModel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\SearchAddressModel.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\SearchAddressModel.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\SearchAddressModel.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\SearchAddressModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:27:03.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Tag.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\Tag.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Tag.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\Tag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:06:26.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\Response.cs",
               "RelativeDocumentMoniker": "ASP.NET\\Models\\Response.cs",
@@ -492,325 +305,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T12:01:01.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TagDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TagDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\TagDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TagDto.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\TagDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:05:57.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TokenResponse.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TokenResponse.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Models\\TokenResponse.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Models\\TokenResponse.cs",
-              "RelativeToolTip": "ASP.NET\\Models\\TokenResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T12:46:50.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GarAddressLevel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\GarAddressLevel.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Enums\\GarAddressLevel.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\GarAddressLevel.cs",
-              "RelativeToolTip": "ASP.NET\\Enums\\GarAddressLevel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T12:59:03.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\Gender.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Enums\\Gender.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\Gender.cs",
-              "RelativeToolTip": "ASP.NET\\Enums\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T13:01:22.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateCommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\CreateCommentDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Comment\\CreateCommentDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\CreateCommentDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Comment\\CreateCommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T12:53:08.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateCommentDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\UpdateCommentDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Comment\\UpdateCommentDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Comment\\UpdateCommentDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Comment\\UpdateCommentDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:05:39.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CommunityUserDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityUserDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Community\\CommunityUserDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityUserDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Community\\CommunityUserDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T12:51:00.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CreatePostDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\CreatePostDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Post\\CreatePostDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\CreatePostDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Post\\CreatePostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T12:55:07.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CommunityFullDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityFullDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Community\\CommunityFullDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityFullDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Community\\CommunityFullDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:43:46.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CommunityDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Community\\CommunityDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Community\\CommunityDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Community\\CommunityDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:35:39.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PostDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostDto.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Post\\PostDto.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostDto.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Post\\PostDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:05:14.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PostPagedList.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostPagedList.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\ModelsDTO\\Post\\PostPagedList.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ModelsDTO\\Post\\PostPagedList.cs",
-              "RelativeToolTip": "ASP.NET\\ModelsDTO\\Post\\PostPagedList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:05:11.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "SecurityFilter.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Security\\SecurityFilter.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Security\\SecurityFilter.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Security\\SecurityFilter.cs",
-              "RelativeToolTip": "ASP.NET\\Security\\SecurityFilter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T12:18:43.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "dbo.Posts [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Posts.sql",
-              "ToolTip": "dbo.Posts [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-20T12:45:09.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-20T12:43:43.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PostSorting.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\PostSorting.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Enums\\PostSorting.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\PostSorting.cs",
-              "RelativeToolTip": "ASP.NET\\Enums\\PostSorting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T12:46:35.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IHelper.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IHelper.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Services\\IHelper.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IHelper.cs",
-              "RelativeToolTip": "ASP.NET\\Services\\IHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:04:18.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "IWeatherForecastService.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IWeatherForecastService.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Services\\IWeatherForecastService.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Services\\IWeatherForecastService.cs",
-              "RelativeToolTip": "ASP.NET\\Services\\IWeatherForecastService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:00:26.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\appsettings.json",
-              "RelativeDocumentMoniker": "ASP.NET\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\appsettings.json",
-              "RelativeToolTip": "ASP.NET\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-20T12:25:13.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ASP.NET\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\appsettings.Development.json",
-              "RelativeToolTip": "ASP.NET\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-01T08:35:51.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "CommunityRole.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\CommunityRole.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Enums\\CommunityRole.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Enums\\CommunityRole.cs",
-              "RelativeToolTip": "ASP.NET\\Enums\\CommunityRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T12:46:22.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ASP.NET.csproj",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ASP.NET.csproj",
-              "RelativeDocumentMoniker": "ASP.NET\\ASP.NET.csproj",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\ASP.NET.csproj",
-              "RelativeToolTip": "ASP.NET\\ASP.NET.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-21T05:34:02.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\WeatherForecast.cs",
-              "RelativeToolTip": "ASP.NET\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:32:53.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ASP.NET\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ASP.NET\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:22:22.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ASP.NET\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u044F\\source\\repos\\ASP.NET\\ASP.NET\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ASP.NET\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-20T12:31:55.077Z",
               "EditorCaption": ""
             }
           ]

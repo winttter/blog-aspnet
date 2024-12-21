@@ -6,12 +6,12 @@ namespace ASP.NET.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Like> Likes { get; set; }
         public DbSet<Community> Communities { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Tag> Tags { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Admin relationship
             modelBuilder.Entity<Community>()
                 .HasMany(g => g.Administrators)
                 .WithMany(u => u.CommunityAdmin)
@@ -22,7 +22,6 @@ namespace ASP.NET.Models
                     j => j.ToTable("CommunityAdministrators")
                 );
 
-            // Subscriber relationship
             modelBuilder.Entity<Community>()
                 .HasMany(g => g.Subscribers)
                 .WithMany(u => u.CommunitySubscriber)
@@ -32,6 +31,18 @@ namespace ASP.NET.Models
                     j => j.HasOne<Community>().WithMany().HasForeignKey("CommunityId"),
                     j => j.ToTable("CommunitySubscribers")
                 );
+
+            modelBuilder.Entity<Like>()
+                .HasOne(l => l.Liker)
+                .WithMany(u => u.Likes)
+                .HasForeignKey(l => l.LikerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Like>()
+                .HasOne(l => l.LikedPost)
+                .WithMany(p => p.Likes)
+                .HasForeignKey(l => l.LikedPostId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
         public TestContext(DbContextOptions<TestContext> options): base(options) 
         {

@@ -10,9 +10,11 @@ namespace ASP.NET.Services
 {
     public interface IPostService
     {
-        Task<List<Post>> GetPosts(string userName, List<Tag>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
+        Task<List<Post>> GetPosts(string userName, List<Models.Tag>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
         Task<string> PostPost(CreatePostDto model, string userName);
-        Task<PostFullDto> GetPost(Guid postId);
+        Task<PostFullDto> GetPost(Guid postId, string userName);
+        Task LikePost(Guid postId, string userName);
+        Task RemoveLikePost(Guid postId, string userName);
     }
 
     public class PostService : IPostService
@@ -25,12 +27,12 @@ namespace ASP.NET.Services
             _context = context;
         }
 
-        public async Task<List<Post>> GetPosts(string userName, List<Tag>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
+        public async Task<List<Post>> GetPosts(string userName, List<Models.Tag>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
         {
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == userName)!;
 
 
-            var listOfPosts = _context.Posts.Select(p => p);
+            var listOfPosts = _context.Posts.Include(p => p.Likes).ThenInclude(l => l.Liker).Select(p => p);
 
             if (min != null)
             {
@@ -44,7 +46,7 @@ namespace ASP.NET.Services
 
             if (author != null)
             {
-                listOfPosts = listOfPosts.Where(post => post.Author.Contains(author));
+                listOfPosts = listOfPosts.Where(post => post.Author.FullName.Contains(author));
             }
 
                 switch (sorting)
@@ -56,10 +58,10 @@ namespace ASP.NET.Services
                     listOfPosts = listOfPosts.OrderBy(post => post.CreateTime);
                     break;
                 case PostSorting.LikeAsc:
-                    listOfPosts = listOfPosts.OrderBy(post => post.Likes);
+                    listOfPosts = listOfPosts.OrderBy(post => post.Likes.Count());
                     break;
                 case PostSorting.LikeDesc:
-                    listOfPosts = listOfPosts.OrderByDescending(post => post.Likes);
+                    listOfPosts = listOfPosts.OrderByDescending(post => post.Likes.Count());
                     break;
             }
 
@@ -114,8 +116,7 @@ namespace ASP.NET.Services
 
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == userName)!;
 
-            newPost.Author = userFound.UserName;
-            newPost.AuthorId = userFound.Id;
+            newPost.Author = userFound;
 
             await _context.Posts.AddAsync(newPost);
             await _context.SaveChangesAsync();
@@ -123,12 +124,20 @@ namespace ASP.NET.Services
             return newPost.Id.ToString();
         }
 
-        public async Task<PostFullDto> GetPost(Guid postId)
+        public async Task<PostFullDto> GetPost(Guid postId, string userName)
         {
+            var userFound = _context.Users
+                .Include(u => u.CommunityAdmin)
+                .Include(u => u.CommunitySubscriber)
+                .FirstOrDefault(a => a.UserName == userName)!;
+
+
             var postFound = await _context.Posts
                 .Include(p => p.Comments)
                 .Include(p => p.Tags)
                 .Include(p => p.Likes)
+                .Include(p => p.Author)
+                .Include(p => p.Community)
                 .FirstOrDefaultAsync(p => p.Id == postId);
 
             var fullPost = new PostFullDto();
@@ -137,16 +146,97 @@ namespace ASP.NET.Services
             fullPost.CreateTime = DateTime.Now;
             fullPost.Title = postFound.Title;
             fullPost.Description = postFound.Description;
-            fullPost.CommunityName = postFound.CommunityName;
-            fullPost.Author = postFound.Author;
-            fullPost.AuthorId = postFound.AuthorId;
+
+            if (postFound.Community != null && postFound.Community.IsClosed && !userFound.CommunityAdmin.Contains(postFound.Community) && !userFound.CommunitySubscriber.Contains(postFound.Community))
+            {
+                throw new Exception("403*user has no rights to view this post");
+            }
+            else if (postFound.Community != null)
+            {
+                fullPost.CommunityName = postFound.Community.Name;
+                fullPost.CommunityId = postFound.Community.Id;
+            }
+            fullPost.Author = postFound.Author.FullName;
+            fullPost.AuthorId = postFound.Author.Id;
             fullPost.AddressId = postFound.AddressId;
-            fullPost.CommunityId = postFound.CommunityId;
+            
             fullPost.Comments = postFound.Comments.ToDtos();
-            fullPost.Likes = postFound.Likes;
-            //fullPost.Tags = postFound.Tags.ToDtos();
+            fullPost.Likes = postFound.Likes.Count();
+            fullPost.Tags = postFound.Tags.ToDtos();
 
             return fullPost;
+        }
+
+        public async Task LikePost(Guid postId, string userName)
+        {
+            var postFound = await _context.Posts
+                .Include(p => p.Likes)
+                .FirstOrDefaultAsync(p => p.Id == postId);
+
+            var userFound = _context.Users
+                .Include(u => u.CommunityAdmin)
+                .Include(u => u.CommunitySubscriber)
+                .FirstOrDefault(a => a.UserName == userName)!;
+
+            if (postFound == null)
+            {
+                throw new Exception("404*Post does not exist");
+            }
+            else if (postFound.Community != null && postFound.Community.IsClosed && !userFound.CommunityAdmin.Contains(postFound.Community) && !userFound.CommunitySubscriber.Contains(postFound.Community))
+            {
+                throw new Exception("403*user has no rights to view this post");
+            }
+            else if (!postFound.Likes.IsNullOrEmpty() && postFound.Likes.Any(l => l.Liker.Id == userFound.Id))
+            {
+                throw new Exception("400*user already liked this post");
+            }
+
+            var like = new Like
+            {
+                Id = postFound.Id,
+                LikedPostId = postFound.Id,
+                LikedPost = postFound,
+                LikerId = userFound.Id,
+                Liker = userFound
+            };
+
+            if (postFound.Likes == null)
+            {
+                postFound.Likes = new List<Like>();
+            }
+          
+            await _context.Likes.AddAsync(like);
+
+            _context.SaveChanges();
+        }
+
+        public async Task RemoveLikePost(Guid postId, string userName)
+        {
+            var postFound = await _context.Posts
+                .Include(p => p.Likes)
+                .FirstOrDefaultAsync(p => p.Id == postId);
+
+            var userFound = _context.Users
+                .Include(u => u.CommunityAdmin)
+                .Include(u => u.CommunitySubscriber)
+                .FirstOrDefault(a => a.UserName == userName)!;
+
+            if (postFound == null)
+            {
+                throw new Exception("404*Post does not exist");
+            }
+            else if (!(!postFound.Likes.IsNullOrEmpty() && postFound.Likes.Any(l => l.Liker.Id == userFound.Id)))
+            {
+                throw new Exception("400*user has not liked this post yet");
+            }
+
+            var likeToRemove = await _context.Likes.FirstOrDefaultAsync(l => l.Liker.Id == userFound.Id);
+
+            if (likeToRemove == null) throw new Exception("404*user has not liked this post yet");
+
+            _context.Likes.Remove(likeToRemove);
+
+            _context.SaveChanges();
         }
     }
 }

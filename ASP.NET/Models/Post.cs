@@ -8,16 +8,11 @@
         public DateTime CreateTime { get; set; }
         public int ReadingTime { get; set; }
         public string? Image { get; set; }
-        public Guid AuthorId { get; set; }
-        public string Author { get; set; }
-        public Guid? CommunityId { get; set; }
-        public string? CommunityName { get; set; }
+        public User Author { get; set; }
+        public Community? Community { get; set; }
         public Guid AddressId { get; set; }
-        public int Likes { get; set; }
-        public bool? HasLike { get; set; }
-        public int CommentsCount { get; set; }
         public List<Tag> Tags { get; set; }
-        public List<Comment> Comments { get; set; }
-        public List <User> UsersLiked { get; set; }
+        public List<Comment>? Comments { get; set; }
+        public List<Like>? Likes { get; set; }
     }
 }

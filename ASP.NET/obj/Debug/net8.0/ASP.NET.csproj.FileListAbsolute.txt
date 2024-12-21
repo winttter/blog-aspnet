@@ -177,4 +177,8 @@ C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\StackExcha
 C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Scrutor.dll
 C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\Евгения\source\repos\ASP.NET\ASP.NET\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -12,7 +12,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ASP.NET.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/post")]
     [ApiController]
 
     public class PostController : ControllerBase
@@ -50,6 +50,30 @@ namespace ASP.NET.Controllers
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
             return Ok(await _postService.GetPosts(name, tags, author, min, max, sorting, onlyMyCommunities, page, size));
         }
+        
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPost(Guid id)
+        {
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            return Ok(await _postService.GetPost(id, name));
+        }
 
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPost("{postId}")]
+        public async Task<IActionResult> LikePost(Guid postId)
+        {
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            await _postService.LikePost(postId, name);
+            return Ok();
+        }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpDelete("{postId}")]
+        public async Task<IActionResult> RemoveLikePost(Guid postId)
+        {
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            await _postService.RemoveLikePost(postId, name);
+            return Ok();
+        }
     }
 }
