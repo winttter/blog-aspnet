@@ -36,7 +36,7 @@ namespace ASP.NET.Controllers
         [HttpGet]
         public async Task<IActionResult> Get(
             [FromQuery]
-            List<Tag>? tags,
+            List<Guid>? tags,
             string? author,
             [Range(0, 100, ErrorMessage = "Minimum reading time cannot be what you sent me.")]
             int? min,

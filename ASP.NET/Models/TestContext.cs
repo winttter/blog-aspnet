@@ -43,6 +43,18 @@ namespace ASP.NET.Models
                 .WithMany(p => p.Likes)
                 .HasForeignKey(l => l.LikedPostId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.Author)
+                .WithMany(u => u.Comments)
+                .HasForeignKey(c => c.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.ParentPost)
+                .WithMany(p => p.Comments)
+                .HasForeignKey(c => c.ParentPostId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
         public TestContext(DbContextOptions<TestContext> options): base(options) 
         {

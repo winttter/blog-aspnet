@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP.NET.Migrations
 {
     [DbContext(typeof(TestContext))]
-    [Migration("20241221134513_init")]
+    [Migration("20241222102312_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -31,10 +31,6 @@ namespace ASP.NET.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<Guid>("AuthorId")
                         .HasColumnType("uniqueidentifier");
 
@@ -51,18 +47,17 @@ namespace ASP.NET.Migrations
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("ParentCommentId")
+                    b.Property<Guid?>("ParentCommentId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PostId")
+                    b.Property<Guid>("ParentPostId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("SubComments")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PostId");
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("ParentPostId");
 
                     b.ToTable("Comments");
                 });
@@ -85,9 +80,6 @@ namespace ASP.NET.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SubscribersCount")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -277,11 +269,21 @@ namespace ASP.NET.Migrations
 
             modelBuilder.Entity("ASP.NET.Models.Comment", b =>
                 {
-                    b.HasOne("ASP.NET.Models.Post", null)
+                    b.HasOne("ASP.NET.Models.User", "Author")
                         .WithMany("Comments")
-                        .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("ASP.NET.Models.Post", "ParentPost")
+                        .WithMany("Comments")
+                        .HasForeignKey("ParentPostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("ParentPost");
                 });
 
             modelBuilder.Entity("ASP.NET.Models.Like", b =>
@@ -373,6 +375,8 @@ namespace ASP.NET.Migrations
 
             modelBuilder.Entity("ASP.NET.Models.User", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Likes");
                 });
 #pragma warning restore 612, 618

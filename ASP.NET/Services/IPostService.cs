@@ -10,7 +10,7 @@ namespace ASP.NET.Services
 {
     public interface IPostService
     {
-        Task<List<Post>> GetPosts(string userName, List<Models.Tag>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
+        Task<List<PostDto>> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
         Task<string> PostPost(CreatePostDto model, string userName);
         Task<PostFullDto> GetPost(Guid postId, string userName);
         Task LikePost(Guid postId, string userName);
@@ -27,12 +27,17 @@ namespace ASP.NET.Services
             _context = context;
         }
 
-        public async Task<List<Post>> GetPosts(string userName, List<Models.Tag>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
+        public async Task<List<PostDto>> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
         {
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == userName)!;
 
 
-            var listOfPosts = _context.Posts.Include(p => p.Likes).ThenInclude(l => l.Liker).Select(p => p);
+            var listOfPosts = _context.Posts
+                .Include(p => p.Comments)
+                .Include(p => p.Tags)
+                .Include(p => p.Author)
+                .Include(p => p.Community)
+                .Include(p => p.Likes).ThenInclude(l => l.Liker).Select(p => p);
 
             if (min != null)
             {
@@ -65,41 +70,14 @@ namespace ASP.NET.Services
                     break;
             }
 
-            listOfPosts = listOfPosts.Skip((page - 1) * size).Take(size);
-
-            var result = await listOfPosts.ToListAsync();
-            List<Post> postsFiltered = new List<Post>();
-
             if (!tags.IsNullOrEmpty())
             {
-                foreach (var post in listOfPosts)
-                {
-                    bool flag = false;
-                    foreach (var tag in post.Tags)
-                    {
-                        foreach (var tagNeeded in tags)
-                        {
-                            if (tagNeeded.Name == tag.Name)
-                            {
-                                flag = true;
-                                postsFiltered.Add(post);
-                                break;
-                            }
-                        }
-
-                        if (flag)
-                        {
-                            break;
-                        }
-                    }
-                }
-
-                result = postsFiltered;
+                listOfPosts = listOfPosts.Where(p => p.Tags.Any(t => tags.Contains(t.Id)));
             }
 
-            
+            var result = await listOfPosts.Skip((page - 1) * size).Take(size).ToListAsync();
 
-            return result;
+            return result.ToDtos(userFound);
         }
 
         public async Task<string> PostPost(CreatePostDto model, string userName)
@@ -112,7 +90,19 @@ namespace ASP.NET.Services
             newPost.ReadingTime = model.ReadingTime;
             newPost.Image = model.Image;
             newPost.AddressId = model.AddressId;
-            newPost.Tags = model.Tags;
+            newPost.Tags = new List<Tag>();
+
+            foreach (var tag in model.Tags)
+            {
+                var foundTag = await _context.Tags.FirstOrDefaultAsync(t => t.Id == tag);
+
+                if (foundTag == null)
+                {
+                    throw new Exception("404*Tag not found");
+                }
+
+                newPost.Tags.Add(foundTag);
+            }
 
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == userName)!;
 
@@ -161,6 +151,7 @@ namespace ASP.NET.Services
             fullPost.AddressId = postFound.AddressId;
             
             fullPost.Comments = postFound.Comments.ToDtos();
+            fullPost.Comments = fullPost.Comments.Where(c => postFound.Comments.First(com => com.Id == c.Id)!.ParentCommentId == null).ToList();
             fullPost.Likes = postFound.Likes.Count();
             fullPost.Tags = postFound.Tags.ToDtos();
 

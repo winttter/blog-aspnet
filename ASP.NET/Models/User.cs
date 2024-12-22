@@ -11,6 +11,7 @@ namespace ASP.NET.Models
         public Gender Gender { get; set; }
         public string FullName { get; set; }
         public List<Like> Likes { get; set; }
+        public List<Comment> Comments { get; set; }
         public List<Community>? CommunityAdmin { get; set; }
         public List<Community>? CommunitySubscriber { get; set; }
         /*public User(UserRegisterModel newUser)

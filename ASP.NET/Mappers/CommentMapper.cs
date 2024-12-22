@@ -3,9 +3,9 @@ using ASP.NET.ModelsDTO.Comment;
 
 namespace ASP.NET.Mappers
 {
-    public static class CommentsMapper
+    public static class CommentMapper
     {
-        public static CommentDto ToDto(this Comment comment)
+        public static CommentDto ToDto(this Comment comment, List<Comment> comments)
         {
             return new CommentDto
             {
@@ -14,15 +14,15 @@ namespace ASP.NET.Mappers
                 Content = comment.Content,
                 DeleteDate = comment.DeleteDate,
                 ModifiedDate = comment.ModifiedDate,
-                AuthorId = comment.AuthorId,
-                Author = comment.Author,
-
+                AuthorId = comment.Author.Id,
+                Author = comment.Author.FullName,
+                SubComments = comments.Count(c => comment.Id == c.ParentCommentId)
             };
         }
 
         public static List<CommentDto> ToDtos(this List<Comment> comments)
         {
-            return comments.Select(ToDto).ToList();
+            return comments.Select(c => c.ToDto(comments)).ToList();
         }
     }
 }

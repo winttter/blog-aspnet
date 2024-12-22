@@ -9,6 +9,6 @@ namespace ASP.NET.ModelsDTO.Post
         public int ReadingTime { get; set; }
         public string? Image { get; set; }
         public Guid AddressId { get; set; }
-        public List<Tag> Tags { get; set; }
+        public List<Guid> Tags { get; set; }
     }
 }
