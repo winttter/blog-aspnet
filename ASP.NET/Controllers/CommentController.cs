@@ -51,5 +51,15 @@ namespace ASP.NET.Controllers
             
             return Ok(await _commentService.GetReplies(commentId, name));
         }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpPut("{commentId}")]
+        public async Task<IActionResult> EditComment(Guid commentId, UpdateCommentDto comment)
+        {
+            var name = User.FindFirst(ClaimTypes.Name)?.Value;
+            await _commentService.EditComment(commentId, name, comment);
+
+            return Ok();
+        }
     }
 }

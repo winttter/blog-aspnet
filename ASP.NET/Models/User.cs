@@ -10,20 +10,11 @@ namespace ASP.NET.Models
         public DateTime? BirthDate { get; set; }
         public Gender Gender { get; set; }
         public string FullName { get; set; }
+        public List<Post> Posts { get; set; }
         public List<Like> Likes { get; set; }
         public List<Comment> Comments { get; set; }
         public List<Community>? CommunityAdmin { get; set; }
         public List<Community>? CommunitySubscriber { get; set; }
-        /*public User(UserRegisterModel newUser)
-        {
-            Id = Guid.NewGuid();
-            CreateTime = DateTime.Now;
-            FullName = newUser.FullName;
-            BirthDate = newUser.BirthDate;
-            Gender = newUser.Gender;
-            PhoneNumber = newUser.PhoneNumber;
-            CommunityAdmin = [];
-            CommunitySubscriber = [];
-        }*/
+        
     }
 }

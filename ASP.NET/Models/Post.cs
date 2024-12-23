@@ -1,4 +1,6 @@
-﻿namespace ASP.NET.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ASP.NET.Models
 {
     public class Post
     {
@@ -8,6 +10,8 @@
         public DateTime CreateTime { get; set; }
         public int ReadingTime { get; set; }
         public string? Image { get; set; }
+        public Guid AuthorId { get; set; }
+        [ForeignKey(nameof(AuthorId))]
         public User Author { get; set; }
         public Community? Community { get; set; }
         public Guid AddressId { get; set; }

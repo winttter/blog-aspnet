@@ -21,9 +21,27 @@ namespace ASP.NET.Mappers
             };
         }
 
+        public static AuthorDto ToAuthorDto(this User user)
+        {
+            return new AuthorDto
+            {
+                FullName = user.FullName,
+                BirthDate = user.BirthDate,
+                Gender = user.Gender,
+                Posts = user.Posts.Count(),
+                Likes = user.Likes.Count(),
+                Created = user.CreateTime
+            };
+        }
+
         public static List<UserDto> ToDtos(this List<User> users)
         {
             return users.Select(ToDto).ToList();
+        }
+
+        public static List<AuthorDto> ToAuthorDtos(this List<User> users)
+        {
+            return users.Select(ToAuthorDto).ToList();
         }
     }
 }

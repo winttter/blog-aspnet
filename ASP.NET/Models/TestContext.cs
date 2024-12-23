@@ -10,6 +10,9 @@ namespace ASP.NET.Models
         public DbSet<Community> Communities { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<House> Houses { get; set; }
+        public DbSet<Hierarchy> Hierarchy { get; set; }
+        public DbSet<Address> Addresses { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Community>()

@@ -22,6 +22,41 @@ namespace ASP.NET.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ASP.NET.Models.Address", b =>
+                {
+                    b.Property<Guid>("ObjectGuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsActual")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid?>("NextId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ObjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ObjectLevel")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ObjectLevelText")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("PrevId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ObjectGuid");
+
+                    b.ToTable("Addresses");
+                });
+
             modelBuilder.Entity("ASP.NET.Models.Comment", b =>
                 {
                     b.Property<Guid>("Id")
@@ -81,6 +116,59 @@ namespace ASP.NET.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Communities");
+                });
+
+            modelBuilder.Entity("ASP.NET.Models.Hierarchy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("ParentObjId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Path")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Hierarchy");
+                });
+
+            modelBuilder.Entity("ASP.NET.Models.House", b =>
+                {
+                    b.Property<Guid>("ObjectGuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("HouseNum")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsActual")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid?>("NextId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("ObjectId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("PrevId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ObjectGuid");
+
+                    b.ToTable("Houses");
                 });
 
             modelBuilder.Entity("ASP.NET.Models.Like", b =>
@@ -305,7 +393,7 @@ namespace ASP.NET.Migrations
             modelBuilder.Entity("ASP.NET.Models.Post", b =>
                 {
                     b.HasOne("ASP.NET.Models.User", "Author")
-                        .WithMany()
+                        .WithMany("Posts")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -375,6 +463,8 @@ namespace ASP.NET.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Likes");
+
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }

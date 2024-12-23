@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "ASP.NET.Controllers.AuthorController",
+    "Method": "GetAuthorList",
+    "RelativePath": "api/author",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ASP.NET.Controllers.CommentController",
     "Method": "DeleteComment",
     "RelativePath": "api/comment/{commentId}",
@@ -26,6 +36,27 @@
       {
         "Name": "commentId",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.CommentController",
+    "Method": "EditComment",
+    "RelativePath": "api/comment/{commentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "comment",
+        "Type": "ASP.NET.ModelsDTO.Comment.UpdateCommentDto",
         "IsRequired": true
       }
     ],

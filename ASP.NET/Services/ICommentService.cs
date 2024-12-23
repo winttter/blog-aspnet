@@ -15,6 +15,7 @@ namespace ASP.NET.Services
         Task CommentPost(Guid postId, string userName, CreateCommentDto model);
         Task DeleteComment(Guid commentId, string userName);
         Task <List<CommentDto>> GetReplies(Guid commentId, string userName);
+        Task EditComment(Guid commentId, string userName, UpdateCommentDto updateComment);
     }
 
     public class CommentService : ICommentService
@@ -156,6 +157,42 @@ namespace ASP.NET.Services
             }
 
             return answerCommentsList.ToDtos();
+
+        }
+
+        public async Task EditComment(Guid commentId, string userName, UpdateCommentDto updateComment)
+        {
+            var commentFound = await _context.Comments
+               .Include(c => c.Author)
+               .Include(c => c.ParentPost)
+               .ThenInclude(p => p.Community)
+               .FirstOrDefaultAsync(c => c.Id == commentId);
+
+            if (commentFound == null) throw new Exception("404*Comment not found");
+
+            var userFound = _context.Users
+                .Include(u => u.CommunityAdmin)
+                .Include(u => u.CommunitySubscriber)
+                .FirstOrDefault(a => a.UserName == userName)!;
+
+            if (commentFound.DeleteDate != null)
+            { 
+                throw new Exception("400*Comment is deleted"); 
+            }
+            else if (commentFound.Author != userFound)
+            {
+                throw new Exception("403*user is not the author of this comment");
+            }
+            else if (commentFound.ParentPost.Community != null && commentFound.ParentPost.Community.IsClosed && !userFound.CommunityAdmin.Contains(commentFound.ParentPost.Community) && !userFound.CommunitySubscriber.Contains(commentFound.ParentPost.Community))
+            {
+                throw new Exception("403*user has no rights to edit comment");
+            }
+
+            commentFound.Content = updateComment.Content;
+            commentFound.ModifiedDate = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+
 
         }
     }
