@@ -24,21 +24,14 @@ namespace ASP.NET.Migrations
 
             modelBuilder.Entity("ASP.NET.Models.Address", b =>
                 {
-                    b.Property<Guid>("ObjectGuid")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsActual")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid?>("NextId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("ObjectId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ObjectId"));
+
+                    b.Property<Guid>("ObjectGuid")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("ObjectLevel")
                         .HasColumnType("int");
@@ -46,13 +39,10 @@ namespace ASP.NET.Migrations
                     b.Property<string>("ObjectLevelText")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("PrevId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ObjectGuid");
+                    b.HasKey("ObjectId");
 
                     b.ToTable("Addresses");
                 });
@@ -126,9 +116,6 @@ namespace ASP.NET.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
                     b.Property<int>("ParentObjId")
                         .HasColumnType("int");
 
@@ -143,30 +130,28 @@ namespace ASP.NET.Migrations
 
             modelBuilder.Entity("ASP.NET.Models.House", b =>
                 {
-                    b.Property<Guid>("ObjectGuid")
+                    b.Property<int>("ObjectId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ObjectId"));
+
+                    b.Property<string>("AddNum1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AddNum2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HouseNum")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsActual")
-                        .HasColumnType("bit");
-
-                    b.Property<Guid?>("NextId")
+                    b.Property<Guid>("ObjectGuid")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("ObjectId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("PrevId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ObjectGuid");
+                    b.HasKey("ObjectId");
 
                     b.ToTable("Houses");
                 });
@@ -231,6 +216,29 @@ namespace ASP.NET.Migrations
                     b.HasIndex("CommunityId");
 
                     b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("ASP.NET.Models.Sending", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Community")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sendings");
                 });
 
             modelBuilder.Entity("ASP.NET.Models.Tag", b =>

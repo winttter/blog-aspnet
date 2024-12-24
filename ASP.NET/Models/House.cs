@@ -2,13 +2,13 @@
 
 namespace ASP.NET.Models
 {
-    [PrimaryKey(nameof(ObjectGuid))]
+    [PrimaryKey(nameof(ObjectId))]
     public class House
     {
-        public Guid ObjectGuid { get; set; }
         public int ObjectId { get; set; }
+        public Guid ObjectGuid { get; set; }
         public string HouseNum { get; set; }
-        public bool IsActual { get; set; }
-        public bool IsActive { get; set; }
+        public string AddNum1 { get; set; }
+        public string AddNum2 { get; set; }
     }
 }

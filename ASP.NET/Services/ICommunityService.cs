@@ -7,6 +7,10 @@ using Microsoft.IdentityModel.Tokens;
 using ASP.NET.Mappers;
 using ASP.NET.ModelsDTO.Community;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Quartz;
+using ASP.NET.Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
 //using ASP.NET.Migrations;
 namespace ASP.NET.Services
 {
@@ -25,10 +29,12 @@ namespace ASP.NET.Services
     public class CommunityService : ICommunityService
     {
         private readonly TestContext _context;
+        private readonly ISchedulerFactory _jobFactory;
 
-        public CommunityService(TestContext context)
+        public CommunityService(ISchedulerFactory jobFactory, TestContext context)
         {
             _context = context;
+            _jobFactory = jobFactory;
         }
 
         public async Task<List<Community>> GetCommunities()
@@ -152,6 +158,7 @@ namespace ASP.NET.Services
         {
             var communityFound = await _context.Communities
                 .Include(c => c.Posts)
+                .Include(c => c.Subscribers)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             var userFound = _context.Users
@@ -198,7 +205,34 @@ namespace ASP.NET.Services
             communityFound.Posts.Add(newPost);
 
             await _context.Posts.AddAsync(newPost);
+
+            foreach (var subscriber in communityFound.Subscribers)
+            {
+                var sending = new Sending();
+                sending.Id = Guid.NewGuid();
+                sending.Email = subscriber.Email;
+                sending.Title = newPost.Title;
+                sending.Community = communityFound.Name;
+
+                await _context.AddAsync(sending);
+            }
+
             await _context.SaveChangesAsync();
+
+            var trigger = TriggerBuilder.Create()
+                .WithIdentity(Guid.NewGuid().ToString())
+                .StartNow()
+                .WithSimpleSchedule(x => x.WithRepeatCount(0)).Build();
+
+            var jobKey = new JobKey($"MissedInspectionsEmailSender-{Guid.NewGuid()}");
+            var sendEmailsJob = JobBuilder
+                .Create<EmailSender>()
+                .WithIdentity(jobKey)
+                .Build();
+
+            var scheduler = await _jobFactory.GetScheduler();
+
+            await scheduler.ScheduleJob(sendEmailsJob, trigger);
 
             return newPost.Id;
         }

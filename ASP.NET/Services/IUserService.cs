@@ -14,7 +14,7 @@ namespace ASP.NET.Services
         Task<TokenResponse> Login(LoginCredentials loginCredentials);
         Task<Response> Logout(string authorizationString);
         Task<UserDto> GetProfile(string authorizationString);
-        Task<UserEditModel> EditProfile(string authorizationString);
+        Task EditProfile(string authorizationString, UserEditModel model);
     }
 
     public class UserService : IUserService
@@ -44,15 +44,11 @@ namespace ASP.NET.Services
                 Gender = model.Gender,
 
             };
-            //await _context.Users.AddAsync(user);
-            
 
             var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
             {
-                TokenResponse token = new TokenResponse();
-                token.Token = result.Errors.First().Description;
-                return token;
+                throw new Exception("400*" + result.Errors.First().Description);
             }
             await _context.SaveChangesAsync();
 
@@ -64,7 +60,7 @@ namespace ASP.NET.Services
         public async Task<TokenResponse> Login(LoginCredentials loginCredentials)
         {
 
-            var user = _context.Users.FirstOrDefault(x => x.Email == loginCredentials.Email);   //await _userManager.FindByNameAsync(loginCredentials.);
+            var user = _context.Users.FirstOrDefault(x => x.Email == loginCredentials.Email);   
             var result = await _userManager.CheckPasswordAsync(user, loginCredentials.Password);
             TokenResponse token = new TokenResponse();
             if (result)
@@ -73,7 +69,7 @@ namespace ASP.NET.Services
             }
             else
             {
-                token.Token = "user does not exist";
+                throw new Exception("404*user does not exist");
             }
             return token;
         }
@@ -109,16 +105,16 @@ namespace ASP.NET.Services
             user.Gender = userFound.Gender;
             return user;
         }
-        public async Task<UserEditModel> EditProfile(string name)
+        public async Task EditProfile(string name, UserEditModel model)
         {
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == name)!;
-            UserEditModel user = new UserEditModel();
-            user.PhoneNumber = userFound.PhoneNumber;
-            user.Email = userFound.Email;
-            user.BirthDate = userFound.BirthDate;
-            user.FullName = userFound.UserName!;
-            user.Gender = userFound.Gender;
-            return user;
+            userFound.PhoneNumber = model.PhoneNumber;
+            userFound.Email = model.Email;
+            userFound.BirthDate = model.BirthDate;
+            userFound.UserName = model.FullName;
+            userFound.Gender = model.Gender;
+
+            await _context.SaveChangesAsync();
         }
     }
 

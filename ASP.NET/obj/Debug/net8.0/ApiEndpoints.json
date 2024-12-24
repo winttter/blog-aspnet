@@ -1,5 +1,42 @@
 [
   {
+    "ContainingType": "ASP.NET.Controllers.AddressController",
+    "Method": "GetChain",
+    "RelativePath": "api/address/chain",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objectGuid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ASP.NET.Controllers.AddressController",
+    "Method": "FindChildren",
+    "RelativePath": "api/address/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentObjectId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ASP.NET.Controllers.AuthorController",
     "Method": "GetAuthorList",
     "RelativePath": "api/author",
@@ -372,7 +409,13 @@
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ASP.NET.ModelsDTO.User.UserEditModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -395,7 +438,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "ASP.NET.Models.LoginCredentials",
+        "Type": "ASP.NET.ModelsDTO.User.LoginCredentials",
         "IsRequired": true
       }
     ],
@@ -426,26 +469,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ASP.NET.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ASP.NET.WeatherForecast, ASP.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

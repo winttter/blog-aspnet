@@ -198,7 +198,7 @@ namespace ASP.NET.Services
           
             await _context.Likes.AddAsync(like);
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task RemoveLikePost(Guid postId, string userName)
@@ -227,7 +227,7 @@ namespace ASP.NET.Services
 
             _context.Likes.Remove(likeToRemove);
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

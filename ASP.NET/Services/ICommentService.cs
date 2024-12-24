@@ -71,7 +71,7 @@ namespace ASP.NET.Services
 
             await _context.Comments.AddAsync(comment);
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeleteComment(Guid commentId, string userName)

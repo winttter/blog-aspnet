@@ -13,6 +13,7 @@ namespace ASP.NET.Models
         public DbSet<House> Houses { get; set; }
         public DbSet<Hierarchy> Hierarchy { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Sending> Sendings { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Community>()

@@ -5,17 +5,16 @@ namespace ASP.NET.ModelsDTO.User
 {
     public class UserRegisterModel
     {
-        //[Required]
+        [Required, MaxLength(1000), MinLength(1)]
         public string FullName { get; set; }
-        //[Required]
         public DateTime? BirthDate { get; set; }
-        //[Required]
+        [Required]
         public Gender Gender { get; set; }
-        //[Required]
+        [Phone]
         public string? PhoneNumber { get; set; }
-        //[Required]
+        [Required, EmailAddress, MinLength(1)]
         public string Email { get; set; }
-        //[Required]
+        [Required, MinLength(6)]
         public string Password { get; set; }
     }
 }

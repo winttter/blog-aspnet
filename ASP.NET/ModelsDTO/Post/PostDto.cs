@@ -1,4 +1,5 @@
 ﻿using ASP.NET.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace ASP.NET.ModelsDTO.Post
 {

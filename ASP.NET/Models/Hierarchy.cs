@@ -4,7 +4,6 @@
     {
         public int Id { get; set; }
         public int ParentObjId { get; set; }
-        public bool IsActive { get; set; }
         public string Path { get; set; }
     }
 }

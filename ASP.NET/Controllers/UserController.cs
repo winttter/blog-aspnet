@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ASP.NET.Services;
 using ASP.NET.ModelsDTO.User;
-using ASP.NET.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
@@ -50,10 +49,11 @@ namespace ASP.NET.Controllers
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut("editProfile")]
-        public async Task<IActionResult> EditProfile()
+        public async Task<IActionResult> EditProfile(UserEditModel model)
         {
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
-            return Ok(await _userService.GetProfile(name));
+            await _userService.EditProfile(name, model);
+            return Ok();
 
         }
         /*[HttpGet]
