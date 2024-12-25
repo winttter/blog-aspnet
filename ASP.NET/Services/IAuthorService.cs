@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using ASP.NET.Mappers;
 using ASP.NET.ModelsDTO.Comment;
 using Microsoft.AspNetCore.Http.HttpResults;
+using ASP.NET.ModelsDTO.Author;
 //using ASP.NET.Migrations;
 namespace ASP.NET.Services
 {
@@ -17,7 +18,6 @@ namespace ASP.NET.Services
 
     public class AuthorService : IAuthorService
     {
-        //обращение к БД
         private readonly TestContext _context;
 
         public AuthorService(TestContext context)

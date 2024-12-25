@@ -16,14 +16,14 @@ namespace ASP.NET.Services
 {
     public interface ICommunityService
     {
-        Task<List<Community>> GetCommunities();
+        Task<List<CommunityDto>> GetCommunities();
         Task<List<CommunityUserDto>> GetMyCommunities(string userName);
         Task<CommunityFullDto> GetCommunity(Guid id);
         Task Subscribe(Guid id, string userName);
         Task Unsubscribe(Guid id, string userName);
         Task<CommunityRole?> GetRole(Guid id, string userName);
         Task<Guid> CreatePost(Guid id, string userName, CreatePostDto post);
-        Task<List<PostDto>> GetPosts(string userName, Guid communityId, List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc, int page = 1, int size = 5);
+        Task<PostPagedList> GetPosts(string userName, Guid communityId, List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc, int page = 1, int size = 5);
     }
 
     public class CommunityService : ICommunityService
@@ -37,9 +37,15 @@ namespace ASP.NET.Services
             _jobFactory = jobFactory;
         }
 
-        public async Task<List<Community>> GetCommunities()
+        public async Task<List<CommunityDto>> GetCommunities()
         {
-            return await _context.Communities.ToListAsync();
+            var communities = _context.Communities.Include(c => c.Subscribers);
+            List <CommunityDto> answer = new List<CommunityDto>();
+            foreach (var community in communities)
+            {
+                answer.Add(CommunityMapper.ToDto(community, community.Subscribers.Count));
+            }
+            return answer;
         }
 
         public async Task<List<CommunityUserDto>> GetMyCommunities(string userName)
@@ -136,6 +142,11 @@ namespace ASP.NET.Services
             var communityFound = await _context.Communities
                 .FirstOrDefaultAsync(c => c.Id == id);
 
+            if (communityFound == null)
+            {
+                throw new Exception("404*community does not exist");
+            }
+
             var userFound = _context.Users
                 .Include(u => u.CommunityAdmin)
                 .Include(u => u.CommunitySubscriber)
@@ -202,6 +213,11 @@ namespace ASP.NET.Services
                 newPost.Tags.Add(foundTag);
             }
 
+            if (!_context.Addresses.Any(a => a.ObjectGuid == model.AddressId) && !_context.Houses.Any(h => h.ObjectGuid == model.AddressId))
+            {
+                throw new Exception("404*address does not exist");
+            }
+
             communityFound.Posts.Add(newPost);
 
             await _context.Posts.AddAsync(newPost);
@@ -237,7 +253,7 @@ namespace ASP.NET.Services
             return newPost.Id;
         }
 
-        public async Task<List<PostDto>> GetPosts(string userName, Guid communityId, List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc, int page = 1, int size = 5)
+        public async Task<PostPagedList> GetPosts(string userName, Guid communityId, List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc, int page = 1, int size = 5)
         {
             var communityFound = await _context.Communities
                 .Include(c => c.Posts)
@@ -252,9 +268,9 @@ namespace ASP.NET.Services
             {
                 throw new Exception("404*Community not found");
             }
-            else if (!(userFound.CommunityAdmin != null && userFound.CommunityAdmin.Any(c => c == communityFound)))
+            else if (communityFound.IsClosed && !userFound.CommunityAdmin.Contains(communityFound) && !userFound.CommunitySubscriber.Contains(communityFound))
             {
-                throw new Exception("403*Action not allowed");
+                throw new Exception("403*user has no rights to view posts in this community");
             }
 
             var listOfPosts = _context.Posts.Include(p => p.Likes)
@@ -288,9 +304,20 @@ namespace ASP.NET.Services
                 listOfPosts = listOfPosts.Where(p => p.Tags.Any(t => tags.Contains(t.Id)));
             }
 
-            var result = await listOfPosts.Skip((page - 1) * size).Take(size).ToListAsync();
+            int countList = listOfPosts.Count();
 
-            return result.ToDtos(userFound);
+            var result = await listOfPosts.Skip((page - 1) * size).Take(size).ToListAsync();
+            var answer = new PostPagedList();
+            answer.Posts = result.ToDtos(userFound);
+            answer.Pagination = new PageInfoModel()
+            {
+                Count = countList % size > 0 ? countList / size + 1 : countList / size,
+                Current = page,
+                Size = size
+            };
+
+
+            return answer;
         }
     }
 }

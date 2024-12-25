@@ -81,7 +81,7 @@ namespace ASP.NET.Controllers
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("{communityId}/post")]
-        public async Task<IActionResult> GetPosts(Guid communityId, [FromQuery] List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc, int page = 1, int size = 5)
+        public async Task<IActionResult> GetPosts(Guid communityId, [FromQuery] List<Guid>? tags, PostSorting sorting = PostSorting.CreateDesc,[Range(1, int.MaxValue)] int page = 1, [Range(1, int.MaxValue)] int size = 5)
         {
             var name = User.FindFirst(ClaimTypes.Name)?.Value;
             return Ok(await _communityService.GetPosts(name, communityId, tags, sorting, page, size));

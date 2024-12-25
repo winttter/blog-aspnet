@@ -17,7 +17,6 @@ namespace ASP.NET.Services
 
     public class TagService : ITagService
     {
-        //обращение к БД
         private readonly TestContext _context;
 
         public TagService(TestContext context)

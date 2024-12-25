@@ -20,7 +20,6 @@ namespace ASP.NET.Services
 
     public class CommentService : ICommentService
     {
-        //обращение к БД
         private readonly TestContext _context;
 
         public CommentService(TestContext context)
@@ -48,7 +47,11 @@ namespace ASP.NET.Services
             {
                 throw new Exception("403*user has no rights to comment this post");
             }
-
+            else if (model.ParentId != null && !postFound.Comments.Any(c => c.Id == model.ParentId))
+            {
+                throw new Exception("404*Parent comment does not exist");
+            }
+            
             var comment = new Comment
             {
                 Id = Guid.NewGuid(),
@@ -95,9 +98,13 @@ namespace ASP.NET.Services
             {
                 throw new Exception("403*user is not the author of this comment");
             }
-            if (commentFound.ParentPost.Community != null && commentFound.ParentPost.Community.IsClosed && !userFound.CommunityAdmin.Contains(commentFound.ParentPost.Community) && !userFound.CommunitySubscriber.Contains(commentFound.ParentPost.Community))
+            else if (commentFound.ParentPost.Community != null && commentFound.ParentPost.Community.IsClosed && !userFound.CommunityAdmin.Contains(commentFound.ParentPost.Community) && !userFound.CommunitySubscriber.Contains(commentFound.ParentPost.Community))
             {
                 throw new Exception("403*user has no rights to delete comment");
+            }
+            else if (commentFound.DeleteDate != null)
+            {
+                throw new Exception("400*comment is already deleted");
             }
 
             if (_context.Comments.Any(c => c.ParentCommentId == commentFound.Id))

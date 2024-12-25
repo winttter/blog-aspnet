@@ -8,6 +8,7 @@ using ASP.NET.Mappers;
 using ASP.NET.ModelsDTO.Comment;
 using Microsoft.AspNetCore.Http.HttpResults;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using ASP.NET.ModelsDTO.Address;
 //using ASP.NET.Migrations;
 namespace ASP.NET.Services
 {
@@ -19,7 +20,6 @@ namespace ASP.NET.Services
 
     public class AddressService : IAddressService
     {
-        //обращение к БД
         private readonly TestContext _context;
 
         public AddressService(TestContext context)
@@ -30,6 +30,12 @@ namespace ASP.NET.Services
         public async Task<List<SearchAddressModel>> FindChildren(int parentObjectId, string query)
         {
             var addresses = _context.Hierarchy.Where(h => h.ParentObjId == parentObjectId).ToList();
+
+            if (!_context.Hierarchy.Any(h => h.Id == parentObjectId))
+            {
+                throw new Exception("404*object does not exist");
+            }
+
             var result = new List<SearchAddressModel>();
             foreach (var address in addresses)
             {

@@ -1,5 +1,6 @@
 ﻿using ASP.NET.Enums;
 using ASP.NET.Models;
+using ASP.NET.ModelsDTO.Author;
 using ASP.NET.ModelsDTO.Community;
 using ASP.NET.ModelsDTO.User;
 

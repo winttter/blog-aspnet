@@ -5,11 +5,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
 
-namespace ASP.NET.Services
+namespace ASP.NET.Helper
 {
     public class IHelper
     {
-     
+
         public static string GenerateToken(string Username)
         {
             var claims = new List<Claim> { new(ClaimTypes.Name, Username) };
@@ -44,11 +44,42 @@ namespace ASP.NET.Services
                 response = new Response { Status = "Error", Message = exception.Message };
                 context.Response.StatusCode = 500;
             }
-                
+
             context.Response.ContentType = "application/json";
             return context.Response.WriteAsync(JsonConvert.SerializeObject(response));
         }
-        
+
+        private static readonly HttpClient _httpClient = new HttpClient();
+
+        public static async Task<bool> IsImageUrlValidAsync(string imageUrl)
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Head, imageUrl);
+                var response = await _httpClient.SendAsync(request);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return false;
+                }
+
+                if (response.Content.Headers.ContentType != null)
+                {
+                    var contentType = response.Content.Headers.ContentType.MediaType;
+                    return contentType.StartsWith("image/", StringComparison.OrdinalIgnoreCase);
+                }
+
+                return false;
+            }
+            catch (HttpRequestException)
+            {
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
-   
+
 }

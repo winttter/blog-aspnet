@@ -1,6 +1,6 @@
 ﻿using ASP.NET.Enums;
 
-namespace ASP.NET.Models
+namespace ASP.NET.ModelsDTO.Author
 {
     public class AuthorDto
     {

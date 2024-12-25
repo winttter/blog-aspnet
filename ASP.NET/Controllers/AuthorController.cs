@@ -25,7 +25,7 @@ namespace ASP.NET.Controllers
             _authorService = authorService;
         }
 
-        [HttpGet]
+        [HttpGet("list")]
         public async Task<IActionResult> GetAuthorList()
         {
             return Ok(await _authorService.GetAuthorList());

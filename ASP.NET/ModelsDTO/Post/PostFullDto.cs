@@ -1,5 +1,5 @@
-﻿using ASP.NET.Models;
-using ASP.NET.ModelsDTO.Comment;
+﻿using ASP.NET.ModelsDTO.Comment;
+using ASP.NET.ModelsDTO.Tag;
 
 namespace ASP.NET.ModelsDTO.Post
 {

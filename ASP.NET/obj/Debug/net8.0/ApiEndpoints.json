@@ -39,7 +39,7 @@
   {
     "ContainingType": "ASP.NET.Controllers.AuthorController",
     "Method": "GetAuthorList",
-    "RelativePath": "api/author",
+    "RelativePath": "api/author/list",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

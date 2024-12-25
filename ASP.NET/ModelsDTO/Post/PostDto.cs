@@ -1,4 +1,4 @@
-﻿using ASP.NET.Models;
+﻿using ASP.NET.ModelsDTO.Tag;
 using System.ComponentModel.DataAnnotations;
 
 namespace ASP.NET.ModelsDTO.Post

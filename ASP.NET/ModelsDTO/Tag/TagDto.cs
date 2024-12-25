@@ -1,4 +1,4 @@
-﻿namespace ASP.NET.Models
+﻿namespace ASP.NET.ModelsDTO.Tag
 {
     public class TagDto
     {

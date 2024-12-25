@@ -2,6 +2,7 @@
 using ASP.NET.Models;
 using ASP.NET.ModelsDTO.Comment;
 using ASP.NET.ModelsDTO.Community;
+using ASP.NET.ModelsDTO.Post;
 
 namespace ASP.NET.Mappers
 {
@@ -28,6 +29,19 @@ namespace ASP.NET.Mappers
                 IsClosed = community.IsClosed,
                 SubscribersCount = subscribersCount,
                 Administrators = community.Administrators.ToDtos()
+            };
+        }
+
+        public static CommunityDto ToDto(this Community community, int subscribersCount)
+        {
+            return new CommunityDto
+            {
+                Id = community.Id,
+                CreateTime = community.CreateTime,
+                Name = community.Name,
+                Description = community.Description,
+                IsClosed = community.IsClosed,
+                SubscribersCount = subscribersCount,
             };
         }
     }

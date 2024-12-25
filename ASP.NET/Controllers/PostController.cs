@@ -38,13 +38,15 @@ namespace ASP.NET.Controllers
             [FromQuery]
             List<Guid>? tags,
             string? author,
-            [Range(0, 100, ErrorMessage = "Minimum reading time cannot be what you sent me.")]
+            [Range(0, int.MaxValue, ErrorMessage = "Minimum reading time cannot be what you sent me.")]
             int? min,
-            [Range(0, 100, ErrorMessage = "Max reading time cannot be what you sent me.")]
+            [Range(0, int.MaxValue, ErrorMessage = "Max reading time cannot be what you sent me.")]
             int? max,
             PostSorting sorting = PostSorting.CreateDesc,
-            bool onlyMyCommunities = false, 
-            int page = 1, 
+            bool onlyMyCommunities = false,
+            [Range(1, int.MaxValue, ErrorMessage = "page number cannot be what you sent me.")]
+            int page = 1,
+            [Range(1, int.MaxValue, ErrorMessage = "page size cannot be what you sent me.")]
             int size = 5)
         {
             var name = User.FindFirst(ClaimTypes.Name)?.Value;

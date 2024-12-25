@@ -5,12 +5,13 @@ using ASP.NET.Enums;
 using System.Linq;
 using Microsoft.IdentityModel.Tokens;
 using ASP.NET.Mappers;
+using ASP.NET.Helper;
 //using ASP.NET.Migrations;
 namespace ASP.NET.Services
 {
     public interface IPostService
     {
-        Task<List<PostDto>> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
+        Task<PostPagedList> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting, bool onlyMyCommunities, int page, int size);
         Task<string> PostPost(CreatePostDto model, string userName);
         Task<PostFullDto> GetPost(Guid postId, string userName);
         Task LikePost(Guid postId, string userName);
@@ -19,7 +20,6 @@ namespace ASP.NET.Services
 
     public class PostService : IPostService
     {
-        //обращение к БД
         private readonly TestContext _context;
 
         public PostService(TestContext context)
@@ -27,10 +27,24 @@ namespace ASP.NET.Services
             _context = context;
         }
 
-        public async Task<List<PostDto>> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
+        public async Task<PostPagedList> GetPosts(string userName, List<Guid>? tags, string? author, int? min, int? max, PostSorting sorting = PostSorting.CreateDesc, bool onlyMyCommunities = false, int page = 1, int size = 5)
         {
             var userFound = _context.Users.FirstOrDefault(a => a.UserName == userName)!;
 
+            if (max < min)
+            {
+                throw new Exception("400*max mustn't be less than min");
+            }
+
+            foreach (var tag in tags)
+            {
+                var foundTag = await _context.Tags.FirstOrDefaultAsync(t => t.Id == tag);
+
+                if (foundTag == null)
+                {
+                    throw new Exception("404*Tag not found");
+                }
+            }
 
             var listOfPosts = _context.Posts
                 .Include(p => p.Comments)
@@ -75,13 +89,28 @@ namespace ASP.NET.Services
                 listOfPosts = listOfPosts.Where(p => p.Tags.Any(t => tags.Contains(t.Id)));
             }
 
-            var result = await listOfPosts.Skip((page - 1) * size).Take(size).ToListAsync();
+            int countList = listOfPosts.Count();
 
-            return result.ToDtos(userFound);
+            var result = await listOfPosts.Skip((page - 1) * size).Take(size).ToListAsync();
+            var answer = new PostPagedList();
+            answer.Posts = result.ToDtos(userFound);
+            answer.Pagination = new PageInfoModel()
+            {
+                Count = countList % size > 0 ? countList / size + 1 : countList / size,
+                Current = page,
+                Size = size
+            };
+
+            return answer;
         }
 
         public async Task<string> PostPost(CreatePostDto model, string userName)
         {
+            if (!await IHelper.IsImageUrlValidAsync(model.Image))
+            {
+                throw new Exception("400*image is not valid");
+            }
+
             Post newPost = new Post();
             newPost.Id = Guid.NewGuid();
             newPost.CreateTime = DateTime.Now;
@@ -129,6 +158,11 @@ namespace ASP.NET.Services
                 .Include(p => p.Author)
                 .Include(p => p.Community)
                 .FirstOrDefaultAsync(p => p.Id == postId);
+
+            if (postFound == null)
+            {
+                throw new Exception("404*post does not exist");
+            }
 
             var fullPost = new PostFullDto();
 
