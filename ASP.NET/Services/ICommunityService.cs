@@ -240,7 +240,7 @@ namespace ASP.NET.Services
                 .StartNow()
                 .WithSimpleSchedule(x => x.WithRepeatCount(0)).Build();
 
-            var jobKey = new JobKey($"MissedInspectionsEmailSender-{Guid.NewGuid()}");
+            var jobKey = new JobKey($"EmailSender-{Guid.NewGuid()}");
             var sendEmailsJob = JobBuilder
                 .Create<EmailSender>()
                 .WithIdentity(jobKey)

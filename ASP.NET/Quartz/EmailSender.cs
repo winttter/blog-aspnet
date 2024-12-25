@@ -3,6 +3,7 @@ using MailKit.Net.Smtp;
 using Microsoft.EntityFrameworkCore;
 using MimeKit;
 using Quartz;
+using Quartz.Spi;
 using static Org.BouncyCastle.Math.EC.ECCurve;
 
 namespace ASP.NET.Quartz
@@ -23,10 +24,27 @@ namespace ASP.NET.Quartz
                 catch (Exception ex)
                 {
 
-                Console.WriteLine($"Failed to send one email ({sending.Email}). Retrying in 5 minutes");
+                    Console.WriteLine($"Failed to send one email ({sending.Email}). Retrying in 5 seconds");
                 }
             }
             await _context.SaveChangesAsync();
+
+            var sendingsChanged = await _context.Sendings.ToListAsync();
+            if ( sendingsChanged.Count > 0 )
+            {
+                var trigger = TriggerBuilder.Create()
+                .WithIdentity(Guid.NewGuid().ToString())
+                .StartAt(DateBuilder.FutureDate(5, IntervalUnit.Second))
+                .Build();
+
+                var jobKey = new JobKey($"EmailSender-{Guid.NewGuid()}");
+                var sendEmailsJob = JobBuilder
+                    .Create<EmailSender>()
+                    .WithIdentity(jobKey)
+                .Build();
+
+                await _jobContext.Scheduler.ScheduleJob(sendEmailsJob, trigger);
+            }
         }
 
         public async Task SendEmailAsync(string subscriberEmail, string body)
