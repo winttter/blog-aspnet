@@ -63,7 +63,6 @@ namespace ASP.NET.Services
 
         public async Task<TokenResponse> Login(LoginCredentials loginCredentials)
         {
-
             var user = _context.Users.FirstOrDefault(x => x.Email == loginCredentials.Email);   
             var result = await _userManager.CheckPasswordAsync(user, loginCredentials.Password);
             TokenResponse token = new TokenResponse();

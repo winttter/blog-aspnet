@@ -1,0 +1,49 @@
+rules:
+  - id: hardcoded-password
+    pattern: 'var $VAR = "$VAL";'
+    message: "Avoid hardcoded secrets (e.g. passwords, API keys)"
+    languages: [csharp]
+    severity: ERROR
+    metadata:
+      category: security
+      technology: dotnet
+
+  - id: insecure-login-check
+    pattern: |
+      if ($USER == "$HARDCODED_USER" && $PASS == "$HARDCODED_PASS")
+    message: "Avoid hardcoded credentials in login checks"
+    languages: [csharp]
+    severity: WARNING
+
+  - id: suspicious-token
+    pattern: 'string $VAR = "$TOKEN";'
+    message: "Possible hardcoded token or API key"
+    languages: [csharp]
+    severity: WARNING
+
+  - id: base64-hardcoded-secret
+    pattern: 'Convert.FromBase64String("$SECRET");'
+    message: "Hardcoded base64-encoded secret detected"
+    languages: [csharp]
+    severity: WARNING
+
+  - id: csharp-sql-injection
+    pattern: |
+      $COMMAND = new SqlCommand($QUERY, $CONNECTION);
+      $COMMAND.Parameters.AddWithValue("$PARAMETER", $VALUE);
+      $RESULT = $COMMAND.ExecuteNonQuery();
+    message: |
+       Обнаружена возможная SQL-инъекция.
+       Не используйте $QUERY напрямую в SQL-запросе, используйте параметры.
+    languages:
+      - csharp
+    severity: WARNING
+    metadata:
+      cwe: "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+
+  - id: insecure-cors-allowanyorigin
+    pattern: |
+      builder.AllowAnyOrigin() 
+    message: "CORS policy allows any origin — restrict to specific domains in production"
+    languages: [csharp]
+    severity: ERROR
