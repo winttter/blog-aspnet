@@ -169,8 +169,7 @@
               "ViewState": "AgIAABoAAAAAAAAAAAAswA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T12:51:03.983Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -183,8 +182,7 @@
               "ViewState": "AgIAAFsAAAAAAAAAAAAMwGUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:32:14.775Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -197,8 +195,7 @@
               "ViewState": "AgIAAEQAAAAAAAAAAAAiwFMAAADPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T03:35:02.363Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -211,8 +208,7 @@
               "ViewState": "AgIAAA4AAAAAAAAAAADwv/oAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-22T03:35:56.541Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -234,12 +230,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Sendings [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Title": "dbo.Sendings.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Sendings.sql",
-              "ToolTip": "dbo.Sendings [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/TestBD/True/SqlTable/dbo.Sendings.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-25T13:21:13.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T13:21:13.981Z"
             },
             {
               "$type": "Document",
@@ -597,8 +592,7 @@
               "RelativeToolTip": "ASP.NET\\Quartz\\EmailSender.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T09:39:12.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T09:39:12.974Z"
             },
             {
               "$type": "Document",

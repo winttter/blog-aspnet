@@ -33,8 +33,8 @@ rules:
       $COMMAND.Parameters.AddWithValue("$PARAMETER", $VALUE);
       $RESULT = $COMMAND.ExecuteNonQuery();
     message: |
-       Обнаружена возможная SQL-инъекция.
-       Не используйте $QUERY напрямую в SQL-запросе, используйте параметры.
+       РћР±РЅР°СЂСѓР¶РµРЅР° РІРѕР·РјРѕР¶РЅР°СЏ SQL-РёРЅСЉРµРєС†РёСЏ.
+       РќРµ РёСЃРїРѕР»СЊР·СѓР№С‚Рµ $QUERY РЅР°РїСЂСЏРјСѓСЋ РІ SQL-Р·Р°РїСЂРѕСЃРµ, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ РїР°СЂР°РјРµС‚СЂС‹.
     languages:
       - csharp
     severity: WARNING
@@ -44,6 +44,6 @@ rules:
   - id: insecure-cors-allowanyorigin
     pattern: |
       builder.AllowAnyOrigin() 
-    message: "CORS policy allows any origin — restrict to specific domains in production"
+    message: "CORS policy allows any origin вЂ” restrict to specific domains in production"
     languages: [csharp]
     severity: ERROR
