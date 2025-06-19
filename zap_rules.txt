@@ -1,0 +1,11 @@
+40012 FAIL     # Cross Site Scripting (Reflected)
+40014 FAIL     # Cross Site Scripting (Persistent)
+40018 FAIL     # SQL Injection
+40035 FAIL     # X-Content-Type-Options Header Missing
+40020 FAIL     # Cookie without SameSite attribute
+
+10021 WARN     # X-Content-Type-Options Header Missing
+10020 WARN     # X-Frame-Options Header Not Set
+10015 WARN     # Cookie No Secure Flag
+10010 WARN     # Cookie No HttpOnly Flag
+10016 WARN     # Web Browser XSS Protection Not Enabled
